@@ -5,7 +5,7 @@ title: "Hello World Blog"
 
 <nav>
   <a href="{{ '/' | relative_url }}">首页</a> ·
-  <a href="{{ '/about.html' | relative_url }}">About</a>
+  <a href="{{ '/about/' | relative_url }}">About</a>
 </nav>
 
 <hr />
