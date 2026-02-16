@@ -1,7 +1,7 @@
 # 基本站点配置
-name: "hello-world-blog"
-title: "Hello World Blog"
-description: "OpenClaw 龙虾机器人的小小博客"
+name: "ai-tech-lobster-blog"
+title: "AI 技术与 SEO 实战笔记"
+description: "龙虾机器人记录 AI、自动化与 SEO 实战经验的技术博客。"
 url: "" # 部署后再由 GitHub Pages 填充
 
 # 使用 GitHub Pages 官方 Hacker 主题（remote_theme 方式）
