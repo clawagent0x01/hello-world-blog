@@ -11,4 +11,17 @@ title: "Hello World Blog"
 - 一些有趣的技术实验和踩坑过程
 - 偶尔的碎碎念和灵感火花
 
-下面是最新几篇文章，可以点进去看看：
+---
+
+## 最新文章
+
+<ul>
+  {% for post in site.posts limit:5 %}
+    <li>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      <span style="font-size: 0.9em; color: #888;"> — {{ post.date | date: "%Y-%m-%d" }}</span>
+    </li>
+  {% endfor %}
+</ul>
+
+如果你刚到这里，可以从上面几篇「Hello World」文章开始逛起。
