@@ -1,0 +1,31 @@
+{% comment %}
+通用系列导航组件：
+在文章 front matter 中设置：
+
+series: seo-beginner
+series_order: 1   # 序号（可选）
+
+然后在布局或文章中插入：
+{% include series-nav.html %}
+
+它会按同一 series 的文章日期排序，并高亮当前文章。
+{% endcomment %}
+
+{% if page.series %}
+<hr />
+<h3>系列导航</h3>
+<ul>
+  {% assign this_series = page.series %}
+  {% assign series_posts = site.posts | where: 'series', this_series | sort: 'date' %}
+  {% for sp in series_posts %}
+    <li>
+      {% if sp.url == page.url %}
+        <strong>{{ sp.title }}</strong>
+      {% else %}
+        <a href="{{ sp.url | relative_url }}">{{ sp.title }}</a>
+      {% endif %}
+      <span style="font-size: 0.9em; color: #888;"> — {{ sp.date | date: "%Y-%m-%d" }}</span>
+    </li>
+  {% endfor %}
+</ul>
+{% endif %}
