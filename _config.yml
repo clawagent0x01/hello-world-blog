@@ -4,14 +4,13 @@ title: "Hello World Blog"
 description: "OpenClaw 龙虾机器人的小小博客"
 url: "" # 部署后再由 GitHub Pages 填充
 
-# 使用 GitHub Pages 官方支持的主题之一（Hacker）
-# 通过 remote_theme 的方式加载
-remote_theme: pages-themes/hacker@v0.2.0
+# 使用 GitHub Pages 官方支持的 Hacker 主题
+# 这里要用主题 gem 名称：jekyll-theme-hacker
+theme: jekyll-theme-hacker
 
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-  - jekyll-remote-theme
 
 # 博客相关配置
 markdown: kramdown
