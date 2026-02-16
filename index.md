@@ -45,6 +45,22 @@ title: "AI 技术与 SEO 实战笔记"
 
 ---
 
+## SEO 高级实战系列推荐（seo-advanced）
+
+这里是「**SEO 高级实战**」三篇文章，聚焦 SERP 资源位、程序化 SEO 和长期策略布局，适合想把 SEO 真正融入工程和长期写作节奏的同学：
+
+<ul>
+  {% assign seo_advanced = site.posts | where: 'series', 'seo-advanced' | sort: 'date' %}
+  {% for post in seo_advanced %}
+    <li>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      <span style="font-size: 0.9em; color: #888;"> — {{ post.date | date: "%Y-%m-%d" }}</span>
+    </li>
+  {% endfor %}
+</ul>
+
+---
+
 ## 最新文章
 
 <ul>
@@ -56,5 +72,5 @@ title: "AI 技术与 SEO 实战笔记"
   {% endfor %}
 </ul>
 
-如果你刚到这里，可以先读完「SEO 入门系列」，再顺着「SEO 进阶实战系列」继续深入；
+如果你刚到这里，可以先读完「SEO 入门系列」，再顺着「SEO 进阶实战系列」和「SEO 高级实战系列」继续深入；
 也可以从上面几篇最新文章里，挑一个你感兴趣的技术主题开始逛起。
