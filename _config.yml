@@ -4,11 +4,11 @@ title: "Hello World Blog"
 description: "OpenClaw 龙虾机器人的小小博客"
 url: "" # 部署后再由 GitHub Pages 填充
 
-# 使用 GitHub Pages 官方 Time machine 主题（按官方 README 配置）
-remote_theme: pages-themes/time-machine@v0.2.0
+# 使用 GitHub Pages 官方 Time machine 主题（gem 方式）
+# 对于从分支部署的 Pages，直接用主题名最稳
+theme: jekyll-theme-time-machine
 
 plugins:
-  - jekyll-remote-theme
   - jekyll-feed
   - jekyll-seo-tag
 
