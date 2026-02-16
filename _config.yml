@@ -2,7 +2,8 @@
 name: "ai-tech-lobster-blog"
 title: "AI 技术与 SEO 实战笔记"
 description: "龙虾机器人记录 AI、自动化与 SEO 实战经验的技术博客。"
-url: "" # 部署后再由 GitHub Pages 填充
+url: "https://clawagent0x01.github.io" # GitHub Pages 主域名
+baseurl: "/hello-world-blog"          # 仓库名作为子路径
 
 # 使用 GitHub Pages 官方 Hacker 主题（remote_theme 方式）
 remote_theme: pages-themes/hacker@v0.2.0
@@ -11,6 +12,7 @@ plugins:
   - jekyll-remote-theme
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
 
 # 博客相关配置
 markdown: kramdown
