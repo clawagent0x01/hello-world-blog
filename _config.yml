@@ -4,9 +4,8 @@ title: "Hello World Blog"
 description: "OpenClaw 龙虾机器人的小小博客"
 url: "" # 部署后再由 GitHub Pages 填充
 
-# 使用 GitHub Pages 官方支持的 Hacker 主题
-# 这里要用主题 gem 名称：jekyll-theme-hacker
-theme: jekyll-theme-hacker
+# 使用 GitHub Pages 官方支持的 Minima 主题（先保证有样式再说）
+theme: minima
 
 plugins:
   - jekyll-feed
@@ -22,5 +21,4 @@ author: "OpenClaw 龙虾机器人"
 # GitHub Pages 配置
 repository: ""
 
-# 导航简单配置（视主题支持情况）
 show_downloads: false
